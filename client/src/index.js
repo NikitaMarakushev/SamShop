@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {createContext} from "react";
+import UserStore from "./store/UserStore";
+
+export const Context = createContext(null);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Context.Provider value={{
+        user: new UserStore()
+    }}>
+        <App/>
+    </Context.Provider>,
   document.getElementById('root')
 );
-
-reportWebVitals();
