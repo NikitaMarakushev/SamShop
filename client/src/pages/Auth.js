@@ -3,7 +3,7 @@ import {Container, Form} from 'react-bootstrap';
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from '../utils/consts';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Raw';
+import Row from 'react-bootstrap/Row';
 import {NavLink, useLocation} from 'react-router-dom';
 
 const Auth = () => {

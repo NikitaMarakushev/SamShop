@@ -1,6 +1,7 @@
-import React from 'react';
-import {Col, Container, Image, Row, Card} from "react-bootstrap";
-import bigStar from '../assets/bigStar.png';
+import React, {useEffect, useState} from 'react';
+import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
+import bigStar from '../assets/bigStar.png'
+import {useParams} from 'react-router-dom'
 
 const DevicePage = () => {
     const device = {id: 1, name: 'iphoner 11', price: 2500, rating: 4, img: 'https://bit.ly/2PPkWOg'};

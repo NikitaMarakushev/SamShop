@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
-import Button, { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 const CreateType = ({show, onHide}) => {
+
+    const [value, setValue] = useState('')
+
+    const addType = () => {
+    }
+
     return (
         <Modal size="lg" centered show={show} onHide={onHide}>
             <Modal.Header closeButton>
@@ -18,8 +24,8 @@ const CreateType = ({show, onHide}) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-danger" onClick={props.onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={props.onHide}>Добавить</Button>
+                <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
+                <Button variant="outline-success" onClick={onHide}>Добавить</Button>
             </Modal.Footer>
         </Modal>
     );

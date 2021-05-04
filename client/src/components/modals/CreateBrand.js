@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from "react-bootstrap/Modal";
-import Button, { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 const CreateBrand = ({show, onHide}) => {
     return (
@@ -18,8 +18,8 @@ const CreateBrand = ({show, onHide}) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-danger" onClick={props.onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={props.onHide}>Добавить</Button>
+                <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
+                <Button variant="outline-success" onClick={onHide}>Добавить</Button>
             </Modal.Footer>
         </Modal>
     )
